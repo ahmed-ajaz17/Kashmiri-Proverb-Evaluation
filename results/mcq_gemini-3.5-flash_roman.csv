@@ -1,0 +1,5 @@
+﻿id,mode,model,predicted,correct,is_correct,raw_answer
+1,roman,gemini-3.5-flash,B,B,1,B
+2,roman,gemini-3.5-flash,A,A,1,A
+3,roman,gemini-3.5-flash,,A,0,"in water! Once it is taken out of the water, all the water runs out! Therefore:"
+4,roman,gemini-3.5-flash,C,D,0,"Choose **C** or another? Wait, let's carefully analyze the four"
