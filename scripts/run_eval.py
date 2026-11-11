@@ -73,6 +73,9 @@ def ask_retry(*args, tries=7):
         try:
             return ask(*args)
         except urllib.error.HTTPError as e:
+            if e.code == 402:
+                raise SystemExit("Stopping: HTTP 402 = no credit on this account. "
+                                 "Add credit, or use a model whose name ends in :free.")
             if e.code in (400, 401, 403, 404):
                 raise SystemExit(f"Stopping: HTTP {e.code} (bad key or model name).")
             wait = min(90, 10 * 2 ** i)
@@ -116,7 +119,7 @@ def main():
     done = {}
     if os.path.exists(out_path):
         with open(out_path, encoding="utf-8-sig", newline="") as f:
-            done = {r["id"]: r for r in csv.DictReader(f) if r["raw_answer"] != "ERROR"}
+            done = {r["id"]: r for r in csv.DictReader(f) if r["raw_answer"] != "ERROR" and r["predicted"] != ""}
 
     fields = ["id", "mode", "model", "predicted", "correct", "is_correct", "raw_answer"]
     results = []
