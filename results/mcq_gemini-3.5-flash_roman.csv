@@ -2,10 +2,10 @@
 1,roman,gemini-3.5-flash,B,B,1,B
 2,roman,gemini-3.5-flash,A,A,1,A
 3,roman,gemini-3.5-flash,A,A,1,A
-4,roman,gemini-3.5-flash,C,D,0,"Choose **C** or another? Wait, let's carefully analyze the four"
+4,roman,gemini-3.5-flash,C,D,0,C
 5,roman,gemini-3.5-flash,C,C,1,C
 6,roman,gemini-3.5-flash,C,C,1,C
-7,roman,gemini-3.5-flash,A,B,0,"To determine the meaning of the Kashmiri proverb:   **""Adal tah wadal zunánah chhai pashich zadal tshai""**  - **Adal tah wadal zunánah**: A disorderly, quarrelsome, or shiftless woman (unfit/unsettled) - **chhai**: is like - **pashich zadal"
+7,roman,gemini-3.5-flash,B,B,1,"Based on the Kashmiri proverb, the words **""pashich""** (of the roof) and **""zadal tshai""** (rotten thatch) relate directly to roofing and thatch that fails to protect from the rain.  **Correct Answer:** **B**"
 8,roman,gemini-3.5-flash,D,D,1,D
 9,roman,gemini-3.5-flash,C,C,1,C
 10,roman,gemini-3.5-flash,C,C,1,C
@@ -88,7 +88,7 @@
 87,roman,gemini-3.5-flash,C,C,1,C
 88,roman,gemini-3.5-flash,D,D,1,D
 89,roman,gemini-3.5-flash,D,D,1,D
-90,roman,gemini-3.5-flash,B,B,1,"Based on the Kashmiri proverb, the correct option is **B**.  **Explanation:** The proverb translates literally to: *""By buying roasted corn in the scorching month of Har (June–July), you yourself are directly being roasted.""* Metaphorically, it refers to making a sacrifice or undergoing hardship onl"
+90,roman,gemini-3.5-flash,A,B,0,**A**
 91,roman,gemini-3.5-flash,A,A,1,A
 92,roman,gemini-3.5-flash,B,B,1,B
 93,roman,gemini-3.5-flash,D,D,1,D
@@ -107,7 +107,7 @@
 106,roman,gemini-3.5-flash,A,A,1,A
 107,roman,gemini-3.5-flash,C,C,1,C
 108,roman,gemini-3.5-flash,A,A,1,A
-109,roman,gemini-3.5-flash,D,C,0,"The correct option is **D**.  **Explanation:** The Kashmiri proverb *""Kanah-dol chhui Botani soddhas barábar""* literally translates to ""Inclining an ear (a whisper in the ear) is equal to the Tibetan sea."" In Kashmiri folklore and traditional wisdom (as recorded in historical collections like J. Hin"
+109,roman,gemini-3.5-flash,C,C,1,C
 110,roman,gemini-3.5-flash,D,D,1,D
 111,roman,gemini-3.5-flash,D,D,1,D
 112,roman,gemini-3.5-flash,D,D,1,D

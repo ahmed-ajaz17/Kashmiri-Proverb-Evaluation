@@ -61,10 +61,18 @@ def ask(provider, model, key, prompt, max_tokens=2048, effort=None):
         return out["candidates"][0]["content"]["parts"][0]["text"]
     body = {"model": model, "temperature": 0, "max_tokens": max_tokens,
             "messages": [{"role": "user", "content": prompt}]}
-    if effort:
+    if effort == "off" and provider == "openrouter":
+        body["reasoning"] = {"enabled": False}
+    elif effort and provider == "openrouter":
+        body["reasoning"] = {"effort": effort}
+    elif effort:
         body["reasoning_effort"] = effort
     out = post(OPENAI_STYLE[provider], body, {"Authorization": f"Bearer {key}"})
-    return out["choices"][0]["message"].get("content") or ""
+    choice = out["choices"][0]
+    text = choice["message"].get("content") or ""
+    if not text.strip():
+        print("  empty answer, finish_reason =", choice.get("finish_reason"))
+    return text
 
 
 def ask_retry(*args, tries=7):
@@ -73,6 +81,11 @@ def ask_retry(*args, tries=7):
         try:
             return ask(*args)
         except urllib.error.HTTPError as e:
+            try:
+                body = e.read().decode("utf-8", "replace")[:300].replace("\n", " ")
+            except Exception:
+                body = ""
+            print(f"  HTTP {e.code} reason: {body}")
             if e.code == 402:
                 raise SystemExit("Stopping: HTTP 402 = no credit on this account. "
                                  "Add credit, or use a model whose name ends in :free.")
@@ -88,8 +101,23 @@ def ask_retry(*args, tries=7):
 
 
 def parse_letter(text):
-    m = re.search(r"\b([ABCD])\b", text.strip().upper())
-    return m.group(1) if m else ""
+    """Return A/B/C/D only when the final answer is clear, else "" (counted as no answer).
+
+    Clear means: the reply is just a letter (maybe bold or in brackets), or it states
+    "Answer: X", or it marks one single letter in bold. Rambling text with no clear
+    final choice is NOT guessed, so it can never be scored as right or wrong by luck.
+    """
+    t = text.strip()
+    m = re.fullmatch(r"\W*(?:(?:the\s+)?answer\s*(?:is)?\s*:?\s*)?\**\(?([ABCD])\)?\**\W*", t,
+                     flags=re.I)
+    if m:
+        return m.group(1).upper()
+    marks = list(re.finditer(r"\*\*\(?([ABCD])\)?[.)]?\*\*|[Aa]nswer(?:\s+is)?\s*:?\s*\**\(?([ABCD])\b", t))
+    letters = {m.group(1) or m.group(2) for m in marks}
+    # one single letter, and it is stated at the end of the reply (not mid-thought)
+    if len(letters) == 1 and len(t) - marks[-1].end() <= 40:
+        return letters.pop()
+    return ""
 
 
 def main():
@@ -98,10 +126,12 @@ def main():
     ap.add_argument("--model", required=True)
     ap.add_argument("--mode", required=True, choices=["nastaliq", "roman"])
     ap.add_argument("--input", default="data/mcq_test_set.csv")
-    ap.add_argument("--max-tokens", type=int, default=2048,
+    ap.add_argument("--max-tokens", type=int, default=4096,
                     help="room for reasoning models to think before answering")
-    ap.add_argument("--effort", default=None, choices=["low", "medium", "high", "none", "default"],
+    ap.add_argument("--effort", default=None, choices=["low", "medium", "high", "none", "default", "off"],
                     help="reasoning effort for models that support it (optional)")
+    ap.add_argument("--limit", type=int, default=0,
+                    help="stop after this many NEW questions (0 = no limit); run again later to continue")
     ap.add_argument("--sleep", type=float, default=4.0, help="seconds between calls")
     a = ap.parse_args()
 
@@ -116,16 +146,28 @@ def main():
     with open(a.input, encoding="utf-8-sig", newline="") as f:
         rows = list(csv.DictReader(f))
 
-    done = {}
+    # Every row ever saved stays in the file. A stopped run can never delete finished rows.
+    existing = {}
     if os.path.exists(out_path):
         with open(out_path, encoding="utf-8-sig", newline="") as f:
-            done = {r["id"]: r for r in csv.DictReader(f) if r["raw_answer"] != "ERROR" and r["predicted"] != ""}
+            existing = {r["id"]: r for r in csv.DictReader(f)}
+    done = {i for i, r in existing.items()
+            if r["raw_answer"] != "ERROR" and r["predicted"] != ""}
 
     fields = ["id", "mode", "model", "predicted", "correct", "is_correct", "raw_answer"]
-    results = []
+
+    def save():
+        with open(out_path, "w", encoding="utf-8-sig", newline="") as f:
+            w = csv.DictWriter(f, fieldnames=fields)
+            w.writeheader()
+            for k in sorted(existing, key=lambda x: int(x)):
+                w.writerow(existing[k])
+
+    new_done = 0
     for i, r in enumerate(rows, 1):
         if r["id"] in done:
-            results.append(done[r["id"]])
+            continue
+        if a.limit and new_done >= a.limit:
             continue
         proverb = r["proverb_nastaliq"] if a.mode == "nastaliq" else r["transliteration"]
         prompt = PROMPT.format(proverb=proverb, a=r["option_a"], b=r["option_b"],
@@ -135,21 +177,17 @@ def main():
             print(f"{i}/{len(rows)} id={r['id']} FAILED, will retry on next run")
             continue
         pred = parse_letter(raw)
-        results.append({"id": r["id"], "mode": a.mode, "model": a.model,
-                        "predicted": pred, "correct": r["correct_letter"],
-                        "is_correct": int(pred == r["correct_letter"]),
-                        "raw_answer": raw.replace("\n", " ")[:300]})
+        existing[r["id"]] = {"id": r["id"], "mode": a.mode, "model": a.model,
+                             "predicted": pred, "correct": r["correct_letter"],
+                             "is_correct": int(pred == r["correct_letter"]),
+                             "raw_answer": raw.replace("\n", " ")[:300]}
+        new_done += 1
         print(f"{i}/{len(rows)} id={r['id']} pred={pred} correct={r['correct_letter']}")
-        with open(out_path, "w", encoding="utf-8-sig", newline="") as f:
-            w = csv.DictWriter(f, fieldnames=fields)
-            w.writeheader()
-            w.writerows(results)
+        save()
         time.sleep(a.sleep)
 
-    with open(out_path, "w", encoding="utf-8-sig", newline="") as f:
-        w = csv.DictWriter(f, fieldnames=fields)
-        w.writeheader()
-        w.writerows(results)
+    save()
+    results = [existing[k] for k in existing]
     ok = sum(int(x["is_correct"]) for x in results)
     print(f"\n{a.model} [{a.mode}]: {ok}/{len(results)} = {100 * ok / len(results):.1f}%")
     print("Saved to", out_path)

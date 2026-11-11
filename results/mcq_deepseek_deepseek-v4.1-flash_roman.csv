@@ -15,7 +15,7 @@
 14,roman,deepseek/deepseek-v4.1-flash,B,B,1,B
 15,roman,deepseek/deepseek-v4.1-flash,A,B,0,A
 16,roman,deepseek/deepseek-v4.1-flash,C,C,1,C
-17,roman,deepseek/deepseek-v4.1-flash,A,B,0,"Let’s break it down:  - **Akis gom zah** — ""One person got a wound"" or ""one got hurt."" - **měthar gúm shěthar** — ""the other became worse"" or"
+17,roman,deepseek/deepseek-v4.1-flash,D,B,0,D
 18,roman,deepseek/deepseek-v4.1-flash,A,A,1,A
 19,roman,deepseek/deepseek-v4.1-flash,B,D,0,B
 20,roman,deepseek/deepseek-v4.1-flash,B,C,0,B
@@ -27,7 +27,7 @@
 26,roman,deepseek/deepseek-v4.1-flash,B,A,0,B
 27,roman,deepseek/deepseek-v4.1-flash,C,C,1,C
 28,roman,deepseek/deepseek-v4.1-flash,B,C,0,B
-29,roman,deepseek/deepseek-v4.1-flash,A,A,1,"Let's break it down.  The proverb ""Bachih dod chhuh lachih dod"" is in Kashmiri.   - ""Bachih"" relates to a child.   - ""dod"" means pain or suffering."
+29,roman,deepseek/deepseek-v4.1-flash,D,A,0,D
 30,roman,deepseek/deepseek-v4.1-flash,B,C,0,B
 31,roman,deepseek/deepseek-v4.1-flash,B,B,1,B
 32,roman,deepseek/deepseek-v4.1-flash,C,C,1,C
@@ -64,7 +64,7 @@
 63,roman,deepseek/deepseek-v4.1-flash,C,C,1,C
 64,roman,deepseek/deepseek-v4.1-flash,C,C,1,C
 65,roman,deepseek/deepseek-v4.1-flash,C,B,0,C
-66,roman,deepseek/deepseek-v4.1-flash,A,C,0,"Let’s break it down.  The proverb in Kashmiri:   **""Doyih athah chěh tsar wazón""**   Roughly translates to: ""In two hands, there is a grinding stone("
+66,roman,deepseek/deepseek-v4.1-flash,C,C,1,C
 67,roman,deepseek/deepseek-v4.1-flash,C,C,1,C
 68,roman,deepseek/deepseek-v4.1-flash,B,B,1,B
 69,roman,deepseek/deepseek-v4.1-flash,D,D,1,D
@@ -76,7 +76,7 @@
 75,roman,deepseek/deepseek-v4.1-flash,B,B,1,B
 76,roman,deepseek/deepseek-v4.1-flash,A,A,1,A
 77,roman,deepseek/deepseek-v4.1-flash,B,B,1,B
-78,roman,deepseek/deepseek-v4.1-flash,A,C,0,"Let’s break it down.  The proverb in Kashmiri: **""Gámas garah karyú wód?""**   - ""Gámas"" relates to a village.   - ""garah"" can mean a house or"
+78,roman,deepseek/deepseek-v4.1-flash,A,C,0,A
 79,roman,deepseek/deepseek-v4.1-flash,A,A,1,A
 80,roman,deepseek/deepseek-v4.1-flash,D,A,0,D
 81,roman,deepseek/deepseek-v4.1-flash,C,D,0,C
@@ -84,7 +84,7 @@
 83,roman,deepseek/deepseek-v4.1-flash,B,D,0,B
 84,roman,deepseek/deepseek-v4.1-flash,B,B,1,B
 85,roman,deepseek/deepseek-v4.1-flash,B,D,0,B
-86,roman,deepseek/deepseek-v4.1-flash,A,C,0,"Let’s break it down.  The proverb in Kashmiri:   **""Hakimas tah hákimas nishih rachhtam Khudayo""**    - ""Hakimas"" could refer to a ruler or official"
+86,roman,deepseek/deepseek-v4.1-flash,C,C,1,C
 87,roman,deepseek/deepseek-v4.1-flash,A,C,0,A
 88,roman,deepseek/deepseek-v4.1-flash,C,D,0,C
 89,roman,deepseek/deepseek-v4.1-flash,D,D,1,D
@@ -106,11 +106,11 @@
 105,roman,deepseek/deepseek-v4.1-flash,C,D,0,C
 106,roman,deepseek/deepseek-v4.1-flash,B,A,0,B
 107,roman,deepseek/deepseek-v4.1-flash,C,C,1,C
-108,roman,deepseek/deepseek-v4.1-flash,A,A,1,"Let’s break it down.  ""Kanah kapas kaduni"" in Kashmiri literally refers to “one-eyed (person) and cotton carding” — carding cotton is a delicate task requiring good eyesight. A one-eyed person"
+108,roman,deepseek/deepseek-v4.1-flash,A,A,1,A
 109,roman,deepseek/deepseek-v4.1-flash,A,C,0,A
 110,roman,deepseek/deepseek-v4.1-flash,B,D,0,B
 111,roman,deepseek/deepseek-v4.1-flash,D,D,1,D
-112,roman,deepseek/deepseek-v4.1-flash,A,D,0,"Let’s break it down:  - **Manz gani manzamis** – ""In the middle (of the) well, for the one in the middle"" — suggests something central or in the middle of a situation. - **K"
+112,roman,deepseek/deepseek-v4.1-flash,B,D,0,B
 113,roman,deepseek/deepseek-v4.1-flash,D,D,1,D
 114,roman,deepseek/deepseek-v4.1-flash,D,D,1,D
 115,roman,deepseek/deepseek-v4.1-flash,A,A,1,A
