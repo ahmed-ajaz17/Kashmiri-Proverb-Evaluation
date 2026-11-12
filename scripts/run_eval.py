@@ -56,7 +56,7 @@ def post(url, payload, headers):
         return json.loads(r.read().decode("utf-8"))
 
 
-def ask(provider, model, key, prompt, max_tokens=2048, effort=None, turns=None):
+def ask(provider, model, key, prompt, max_tokens=2048, effort=None, turns=None, enum=False):
     """turns = optional earlier conversation: [("user", text), ("assistant", text), ...]"""
     msgs = list(turns) if turns else [("user", prompt)]
     if provider == "gemini":
@@ -64,8 +64,11 @@ def ask(provider, model, key, prompt, max_tokens=2048, effort=None, turns=None):
                f"{model}:generateContent?key={key}")
         contents = [{"role": "user" if r == "user" else "model", "parts": [{"text": t}]}
                     for r, t in msgs]
-        out = post(url, {"contents": contents,
-                         "generationConfig": {"temperature": 0, "maxOutputTokens": max_tokens}}, {})
+        gen = {"temperature": 0, "maxOutputTokens": max_tokens}
+        if enum:   # the API only allows one of these four letters as the whole reply
+            gen["responseMimeType"] = "text/x.enum"
+            gen["responseSchema"] = {"type": "STRING", "enum": ["A", "B", "C", "D"]}
+        out = post(url, {"contents": contents, "generationConfig": gen}, {})
         return out["candidates"][0]["content"]["parts"][0]["text"]
     body = {"model": model, "temperature": 0, "max_tokens": max_tokens,
             "messages": [{"role": r, "content": t} for r, t in msgs]}
@@ -146,6 +149,9 @@ def main():
                     help="room for reasoning models to think before answering")
     ap.add_argument("--effort", default=None, choices=["low", "medium", "high", "none", "default", "off"],
                     help="reasoning effort for models that support it (optional)")
+    ap.add_argument("--enum", action="store_true",
+                    help="Gemini only: force the reply to be exactly A, B, C or D (no essay). "
+                         "Saved separately as <model>-enum. Report it as a different setting.")
     ap.add_argument("--rescue", action="store_true",
                     help="if a reply has no clear letter, ask the model one follow-up for its "
                          "final letter (marked [rescued] in the file; report it in the paper)")
@@ -154,12 +160,15 @@ def main():
     ap.add_argument("--sleep", type=float, default=4.0, help="seconds between calls")
     a = ap.parse_args()
 
+    if a.enum and a.provider != "gemini":
+        raise SystemExit("--enum only works with --provider gemini.")
+    label = a.model + ("-enum" if a.enum else "")
     key = os.environ.get(KEYS[a.provider])
     if not key:
         raise SystemExit(f"Set {KEYS[a.provider]} first (see the setup steps).")
 
     os.makedirs("results", exist_ok=True)
-    safe = re.sub(r"[^A-Za-z0-9._-]+", "_", a.model)
+    safe = re.sub(r"[^A-Za-z0-9._-]+", "_", label)
     out_path = f"results/mcq_{safe}_{a.mode}.csv"
 
     with open(a.input, encoding="utf-8-sig", newline="") as f:
@@ -191,7 +200,7 @@ def main():
         proverb = r["proverb_nastaliq"] if a.mode == "nastaliq" else r["transliteration"]
         prompt = PROMPT.format(proverb=proverb, a=r["option_a"], b=r["option_b"],
                                c=r["option_c"], d=r["option_d"])
-        raw = ask_retry(a.provider, a.model, key, prompt, a.max_tokens, a.effort)
+        raw = ask_retry(a.provider, a.model, key, prompt, a.max_tokens, a.effort, enum=a.enum)
         if raw == "ERROR":
             print(f"{i}/{len(rows)} id={r['id']} FAILED, will retry on next run")
             continue
@@ -202,7 +211,7 @@ def main():
             p2 = parse_letter(raw2) if raw2 != "ERROR" else ""
             if p2:
                 pred, raw = p2, "[rescued] " + p2
-        existing[r["id"]] = {"id": r["id"], "mode": a.mode, "model": a.model,
+        existing[r["id"]] = {"id": r["id"], "mode": a.mode, "model": label,
                              "predicted": pred, "correct": r["correct_letter"],
                              "is_correct": int(pred == r["correct_letter"]),
                              "raw_answer": keep(raw)}
@@ -214,7 +223,7 @@ def main():
     save()
     results = [existing[k] for k in existing]
     ok = sum(int(x["is_correct"]) for x in results)
-    print(f"\n{a.model} [{a.mode}]: {ok}/{len(results)} = {100 * ok / len(results):.1f}%")
+    print(f"\n{label} [{a.mode}]: {ok}/{len(results)} = {100 * ok / len(results):.1f}%")
     print("Saved to", out_path)
 
 

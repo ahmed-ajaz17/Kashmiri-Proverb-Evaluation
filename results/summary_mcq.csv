@@ -7,6 +7,8 @@ gemini-3.5-flash,nastaliq,115,120,95.8,90.6,98.2,0,0
 gemini-3.5-flash,roman,113,120,94.2,88.4,97.1,0,0
 gemini-3.5-flash-lite,nastaliq,66,120,55.0,46.1,63.6,31,31
 gemini-3.5-flash-lite,roman,66,120,55.0,46.1,63.6,19,19
+gemini-3.5-flash-lite-enum,nastaliq,74,120,61.7,52.7,69.9,0,0
+gemini-3.5-flash-lite-enum,roman,70,120,58.3,49.4,66.8,0,0
 openai/gpt-oss-120b,nastaliq,54,120,45.0,36.4,53.9,0,0
 openai/gpt-oss-120b,roman,48,120,40.0,31.7,48.9,0,0
 qwen/qwen3.8-27b,nastaliq,60,120,50.0,41.2,58.8,0,0
