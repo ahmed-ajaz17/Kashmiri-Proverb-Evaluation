@@ -20,7 +20,10 @@ for r in rows:
     models.setdefault(r["model"], {})[r["script"]] = r
 order = sorted(models, key=lambda m: models[m].get("nastaliq", {}).get("accuracy_pct", 0) and
                float(models[m]["nastaliq"]["accuracy_pct"]))
-labels = [m.split("/")[-1] for m in order]
+def worst(m, key):
+    return max(int(models[m][s].get(key, 0) or 0) for s in models[m])
+flagged = [m for m in order if worst(m, "unparsed") >= 5 or worst(m, "rescued") >= 5]
+labels = [m.split("/")[-1] + ("*" if m in flagged else "") for m in order]
 
 fig, ax = plt.subplots(figsize=(8, 0.9 * len(order) + 1.8), facecolor=SURFACE)
 ax.set_facecolor(SURFACE)
@@ -54,7 +57,20 @@ ax.set_title("Kashmiri proverb meaning (multiple choice)", loc="left", fontsize=
 ax.legend(handles=[plt.Rectangle((0, 0), 1, 1, color=NASTALIQ), plt.Rectangle((0, 0), 1, 1, color=ROMAN)],
           labels=["Nastaliq script", "Roman transliteration"], loc="lower left",
           bbox_to_anchor=(0, 1.0), ncol=2, frameon=False, fontsize=9.5, labelcolor=INK)
-fig.tight_layout()
+if flagged:
+    parts = []
+    for m in flagged:
+        name = m.split("/")[-1]
+        u, r = worst(m, "unparsed"), worst(m, "rescued")
+        if u and u == r:
+            parts.append(f"{name}: first reply scored; up to {u} of 120 replies gave no clear letter "
+                         f"(counted as wrong, no follow-up)")
+        elif r:
+            parts.append(f"{name}: up to {r} of 120 answers needed a follow-up question for the final letter")
+        elif u:
+            parts.append(f"{name}: {u} of 120 replies had no clear letter (counted as wrong)")
+    fig.text(0.01, 0.01, "*  " + "; ".join(parts), fontsize=8, color=MUTED, ha="left", va="bottom")
+fig.tight_layout(rect=(0, 0.04 if flagged else 0, 1, 1))
 fig.savefig("results/figure_mcq.png", dpi=200, facecolor=SURFACE)
 fig.savefig("results/figure_mcq.pdf", facecolor=SURFACE)
 print("Saved results/figure_mcq.png and results/figure_mcq.pdf")

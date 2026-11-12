@@ -44,6 +44,10 @@ D. {d}
 Answer with only one letter: A, B, C or D."""
 
 
+FOLLOWUP = ("Based on your analysis above, what is your final answer? "
+            "Reply with only one letter: A, B, C or D.")
+
+
 def post(url, payload, headers):
     req = urllib.request.Request(url, json.dumps(payload).encode("utf-8"),
                                  {"Content-Type": "application/json",
@@ -52,15 +56,19 @@ def post(url, payload, headers):
         return json.loads(r.read().decode("utf-8"))
 
 
-def ask(provider, model, key, prompt, max_tokens=2048, effort=None):
+def ask(provider, model, key, prompt, max_tokens=2048, effort=None, turns=None):
+    """turns = optional earlier conversation: [("user", text), ("assistant", text), ...]"""
+    msgs = list(turns) if turns else [("user", prompt)]
     if provider == "gemini":
         url = ("https://generativelanguage.googleapis.com/v1beta/models/"
                f"{model}:generateContent?key={key}")
-        out = post(url, {"contents": [{"parts": [{"text": prompt}]}],
+        contents = [{"role": "user" if r == "user" else "model", "parts": [{"text": t}]}
+                    for r, t in msgs]
+        out = post(url, {"contents": contents,
                          "generationConfig": {"temperature": 0, "maxOutputTokens": max_tokens}}, {})
         return out["candidates"][0]["content"]["parts"][0]["text"]
     body = {"model": model, "temperature": 0, "max_tokens": max_tokens,
-            "messages": [{"role": "user", "content": prompt}]}
+            "messages": [{"role": r, "content": t} for r, t in msgs]}
     if effort == "off" and provider == "openrouter":
         body["reasoning"] = {"enabled": False}
     elif effort and provider == "openrouter":
@@ -75,11 +83,11 @@ def ask(provider, model, key, prompt, max_tokens=2048, effort=None):
     return text
 
 
-def ask_retry(*args, tries=7):
+def ask_retry(*args, tries=7, **kw):
     """Retry on rate-limit / overload errors, waiting longer each time."""
     for i in range(tries):
         try:
-            return ask(*args)
+            return ask(*args, **kw)
         except urllib.error.HTTPError as e:
             try:
                 body = e.read().decode("utf-8", "replace")[:300].replace("\n", " ")
@@ -100,6 +108,12 @@ def ask_retry(*args, tries=7):
     return "ERROR"
 
 
+def keep(raw):
+    """Text saved to the file: whole reply if short, else first 140 + last 150 characters."""
+    t = raw.replace("\n", " ")
+    return t if len(t) <= 300 else t[:140] + " [...] " + t[-150:]
+
+
 def parse_letter(text):
     """Return A/B/C/D only when the final answer is clear, else "" (counted as no answer).
 
@@ -108,6 +122,8 @@ def parse_letter(text):
     final choice is NOT guessed, so it can never be scored as right or wrong by luck.
     """
     t = text.strip()
+    if t.startswith("[rescued]"):
+        t = t[len("[rescued]"):].strip()
     m = re.fullmatch(r"\W*(?:(?:the\s+)?answer\s*(?:is)?\s*:?\s*)?\**\(?([ABCD])\)?\**\W*", t,
                      flags=re.I)
     if m:
@@ -130,6 +146,9 @@ def main():
                     help="room for reasoning models to think before answering")
     ap.add_argument("--effort", default=None, choices=["low", "medium", "high", "none", "default", "off"],
                     help="reasoning effort for models that support it (optional)")
+    ap.add_argument("--rescue", action="store_true",
+                    help="if a reply has no clear letter, ask the model one follow-up for its "
+                         "final letter (marked [rescued] in the file; report it in the paper)")
     ap.add_argument("--limit", type=int, default=0,
                     help="stop after this many NEW questions (0 = no limit); run again later to continue")
     ap.add_argument("--sleep", type=float, default=4.0, help="seconds between calls")
@@ -177,10 +196,16 @@ def main():
             print(f"{i}/{len(rows)} id={r['id']} FAILED, will retry on next run")
             continue
         pred = parse_letter(raw)
+        if not pred and a.rescue:
+            raw2 = ask_retry(a.provider, a.model, key, prompt, 100, a.effort,
+                             turns=[("user", prompt), ("assistant", raw), ("user", FOLLOWUP)])
+            p2 = parse_letter(raw2) if raw2 != "ERROR" else ""
+            if p2:
+                pred, raw = p2, "[rescued] " + p2
         existing[r["id"]] = {"id": r["id"], "mode": a.mode, "model": a.model,
                              "predicted": pred, "correct": r["correct_letter"],
                              "is_correct": int(pred == r["correct_letter"]),
-                             "raw_answer": raw.replace("\n", " ")[:300]}
+                             "raw_answer": keep(raw)}
         new_done += 1
         print(f"{i}/{len(rows)} id={r['id']} pred={pred} correct={r['correct_letter']}")
         save()

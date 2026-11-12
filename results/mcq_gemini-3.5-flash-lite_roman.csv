@@ -1,68 +1,68 @@
 ﻿id,mode,model,predicted,correct,is_correct,raw_answer
 1,roman,gemini-3.5-flash-lite,C,B,0,C
 2,roman,gemini-3.5-flash-lite,D,A,0,D
-3,roman,gemini-3.5-flash-lite,,A,0,"To determine the correct meaning of the Kashmiri proverb **""Abas andar krand""**, let's look at its literal translation and cultural context:  * **Literal translation:** ""Crying inside a well"" or ""Weeping in a hollow/empty space."" * **Meaning:** It refers to making a lament, grievance, or complaint w"
+3,roman,gemini-3.5-flash-lite,D,A,0,"To determine the correct meaning of the Kashmiri proverb **""Abas andar krand""**, let's look at its literal translation and cultural context.   In Kashmiri, *ab* (or *āb*) generally refers to water, and *krand* (or *kranda*) refers to crying, weeping, or a sound. However, in traditional usage (often "
 4,roman,gemini-3.5-flash-lite,C,D,0,C
-5,roman,gemini-3.5-flash-lite,,C,0,"To determine the correct meaning of the Kashmiri proverb **""Achh watshah tah gáshah ratshah""**, let's look at its literal translation and cultural context:  * **Literal meaning:** ""Catch the eye's path and catch the light/sight."" * **Context/Meaning:** In Kashmiri usage, it refers to an unwelcome, i"
-6,roman,gemini-3.5-flash-lite,,C,0,"To determine the correct meaning of the Kashmiri proverb **""Achhuv andarah riyih surmah kadit""** (literally translating to ""Extracting collyrium/surma from inside the eye""):  This proverb describes an act of extreme cunning, cleverness, or extracting something from a place where it is virtually impo"
+5,roman,gemini-3.5-flash-lite,B,C,0,"To determine the correct meaning of the Kashmiri proverb **""Achh watshah tah gáshah ratshah""**, let's look at its literal translation and cultural context.   In Kashmiri, ""achh"" means eye, ""watshah"" means way/path, and ""gáshah"" means light. The phrase translates roughly to ""keeping an eye on the pat"
+6,roman,gemini-3.5-flash-lite,C,C,1,"To determine the correct meaning of the Kashmiri proverb **""Achhuv andarah riyih surmah kadit""**, let's look at its literal translation and cultural context:  * *Literal translation:* ""Extracting collyrium (surmah/kajal) from inside the eye of a blind person."" * *Implied meaning:* Attempting to extr"
 7,roman,gemini-3.5-flash-lite,B,B,1,B
-8,roman,gemini-3.5-flash-lite,,D,0,"To determine the correct meaning of the Kashmiri proverb **""Adi dadi yětshih tah adi dadi rětshih""** (roughly translating to ""with half-beating/blows you may wish it, and with half-beating/blows you preserve/protect it"" or enduring persistent minor harassment/pressure), let's look at the standard in"
+8,roman,gemini-3.5-flash-lite,B,D,0,[rescued] B
 9,roman,gemini-3.5-flash-lite,C,C,1,C
-10,roman,gemini-3.5-flash-lite,,C,0,"To determine the correct meaning of the Kashmiri proverb **""Admi bastan andar chhuh sir""** (often translated as ""Within man's body is a secret/mystery""), let's evaluate the options:  - *Admi* means man/human. - *Bastan* means body/garment/dwelling. - *Chhuh sir* means is a secret/mystery.  This poin"
-11,roman,gemini-3.5-flash-lite,,B,0,"To determine the correct meaning of the Kashmiri proverb *""Ágah bod paharas noukar bod waharas""*:  * **Literal breakdown:** ""Ágah"" (advance/beginning/short time) can be as significant as a ""pahar"" (a traditional unit of time, roughly 3 hours), while a ""noukar"" (servant/laborer) might need a whole ""w"
+10,roman,gemini-3.5-flash-lite,C,C,1,"To determine the correct meaning of the Kashmiri proverb **""Admi bastan andar chhuh sir""** (often translated as ""Man is a mystery within clothes"" or ""Man is a bundle of mysteries""):  The correct option is **C**."
+11,roman,gemini-3.5-flash-lite,B,B,1,"To determine the correct meaning of the Kashmiri proverb *""Ágah bod paharas noukar bod waharas""*, let's look at its literal and cultural context:  - **Ágah** refers to a landlord, master, or person of high status/wealth. - **Bod paharas** relates to earning a large amount or gaining significantly in"
 12,roman,gemini-3.5-flash-lite,A,A,1,A
 13,roman,gemini-3.5-flash-lite,C,C,1,C
-14,roman,gemini-3.5-flash-lite,,B,0,"To determine the correct meaning of the Kashmiri proverb **""Ak gav jáni yár, byák gav náni yár""**, let's look at its literal translation and cultural context:  * *Ak* = One * *Gav* = Became / is * *Jáni yár* = Dear friend / friend of the soul (or wealthy/beneficial friend) * *Byák* = The other * *Ná"
-15,roman,gemini-3.5-flash-lite,,B,0,"To determine the correct meaning of the Kashmiri proverb **""Ak tah ak gav kah""**, let's look at its literal translation and cultural significance.   Literally, it translates to ""One and one makes eleven"" (referring to the digits '1' and '1' coming together to form '11', symbolizing strength in numbe"
+14,roman,gemini-3.5-flash-lite,B,B,1,"To determine the correct meaning of the Kashmiri proverb **""Ak gav jáni yár, byák gav náni yár""**, let's break down the literal translation: * *Ak* = One * *gav* = became / is * *jáni yár* = true friend / soul friend (or dear friend) * *byák* = the other * *náni yár* = bread-friend / fair-weather fr"
+15,roman,gemini-3.5-flash-lite,B,B,1,[rescued] B
 16,roman,gemini-3.5-flash-lite,C,C,1,C
 17,roman,gemini-3.5-flash-lite,B,B,1,B
-18,roman,gemini-3.5-flash-lite,,A,0,"To determine the correct meaning of the Kashmiri proverb **""Alikúnini dúndah hawar; ak nah atsan garah, tah byák nah nerán barah""**, let's look at its literal translation and cultural context.   The proverb translates roughly to: *""The turmoil in Ali Kunin's house is such that one [guest/outsider] c"
+18,roman,gemini-3.5-flash-lite,A,A,1,[rescued] A
 19,roman,gemini-3.5-flash-lite,C,D,0,C
 20,roman,gemini-3.5-flash-lite,C,C,1,C
-21,roman,gemini-3.5-flash-lite,,B,0,"To determine the meaning of the Kashmiri proverb **""Anin manz káni sundar""**:  * **Literal Translation:** ""A one-eyed person among the blind."" (Derived from *an/anin* meaning blind, and *kán* meaning one-eyed/squint-eyed). * **Meaning:** Just like the English equivalent, ""In the country of the blind"
+21,roman,gemini-3.5-flash-lite,B,B,1,"To determine the correct meaning of the Kashmiri proverb **""Anin manz káni sundar""**:  * *Anin* translates to ""among the blind"" (from *and*, meaning blind). * *Manz* means ""in"" or ""among."" * *Káni sundar* translates to ""the one-eyed beauty/person"" (from *kán*, meaning one-eyed).  Therefore, the lite"
 22,roman,gemini-3.5-flash-lite,D,C,0,D
 23,roman,gemini-3.5-flash-lite,D,D,1,D
-24,roman,gemini-3.5-flash-lite,,D,0,"To determine the correct meaning of the Kashmiri proverb **""Athah chhul tah mětrut tsul""**:  * **Literal translation:** ""Hands washed and friendship fled/ended."" * **Meaning:** It refers to fair-weather friends who stay only as long as there is food or benefit, and leave (""friendship ends"") as soon "
-25,roman,gemini-3.5-flash-lite,,A,0,"To determine the meaning of the Kashmiri proverb *""Athan waryan puch nad, shethan waryan puk srěh""* (which literally translates to: ""After eight years came a lotus stalk, after sixty years came affection/tenderness""), we look at its cultural usage. It is used to describe something that arrives ridic"
-26,roman,gemini-3.5-flash-lite,,A,0,"To determine the correct meaning of the Kashmiri proverb *""Bābah Ādamas zāyih zə gabər, aki rot swaranih beyih rot qabr""* (Literally: ""Father Adam had two sons, one took to the golden ashes/urn and the other took to the grave/tomb"" — reflecting a mythological or ancestral division of paths, often in"
+24,roman,gemini-3.5-flash-lite,D,D,1,"To determine the correct meaning of the Kashmiri proverb **""Athah chhul tah mětrut tsul""**, let's look at its literal translation and cultural context:  * **Athah chhul** means ""washed hands"" (often after finishing a meal together). * **Mětrut tsul** means ""friendship disappeared"" or ""departed.""  Th"
+25,roman,gemini-3.5-flash-lite,D,A,0,[rescued] D
+26,roman,gemini-3.5-flash-lite,A,A,1,[rescued] A
 27,roman,gemini-3.5-flash-lite,C,C,1,C
-28,roman,gemini-3.5-flash-lite,,C,0,"The correct meaning of the Kashmiri proverb **""Bābah matyov tah děd tih mateyih""** (literally meaning ""The father went mad, and may the mother also go mad"") is to wish complete ruin on both sides, or a state of mutual destruction/universal chaos.   Looking at the options, C best captures this sense "
+28,roman,gemini-3.5-flash-lite,B,C,0,"To determine the correct meaning of the Kashmiri proverb **""Bābah matyov tah děd tih mateyih""**, let's look at its literal translation and cultural context.   *Literally:* ""The father went mad, and the mother too went mad.""   In common usage, this proverb is applied when everyone in a household, gro"
 29,roman,gemini-3.5-flash-lite,A,A,1,A
-30,roman,gemini-3.5-flash-lite,,C,0,"To determine the correct meaning of the Kashmiri proverb **""Badas sir bawun chhuh běbih andar saruf rachhun""**:  * **Literal Translation:** ""Showing secrets to elders is like keeping a snake inside one's bosom (or clothes)."" * **Meaning:** Entrusting sensitive secrets or confidences to untrustworthy"
+30,roman,gemini-3.5-flash-lite,C,C,1,[rescued] C
 31,roman,gemini-3.5-flash-lite,B,B,1,B
 32,roman,gemini-3.5-flash-lite,C,C,1,C
 33,roman,gemini-3.5-flash-lite,D,B,0,D
 34,roman,gemini-3.5-flash-lite,B,D,0,B
 35,roman,gemini-3.5-flash-lite,A,B,0,A
-36,roman,gemini-3.5-flash-lite,,B,0,"To determine the meaning of the Kashmiri proverb **""Batah gardan""**, let's look at its cultural and literal context:  *   **Literal translation:** ""Batah"" refers to a child (specifically a son or a child in general), and ""gardan"" can relate to the neck, burden, or the extreme vulnerability and life-"
-37,roman,gemini-3.5-flash-lite,,A,0,"To determine the correct meaning of the Kashmiri proverb **""Batah gajih ruhun""**, let's look at its literal translation and cultural context.   In Kashmiri, *""Batah""* refers to a Kashmiri Pandit (historically often addressed or associated respectfully), and *""gajih ruhun""* translates roughly to ""bec"
+36,roman,gemini-3.5-flash-lite,A,B,0,[rescued] A
+37,roman,gemini-3.5-flash-lite,A,A,1,[rescued] A
 38,roman,gemini-3.5-flash-lite,C,A,0,C
 39,roman,gemini-3.5-flash-lite,C,C,1,**C**
-40,roman,gemini-3.5-flash-lite,,D,0,"To determine the correct meaning of the Kashmiri proverb **""Be-akl nah kanh tah garah patah kah kah""**, let's look at its literal translation and cultural context.   - *Be-akl* means ""witless"" or ""foolish."" - *Nah kanh* means ""no one"" or ""nobody."" - *Tand garah patah kah kah* relates to household af"
+40,roman,gemini-3.5-flash-lite,D,D,1,[rescued] D
 41,roman,gemini-3.5-flash-lite,B,C,0,B
 42,roman,gemini-3.5-flash-lite,D,D,1,D
-43,roman,gemini-3.5-flash-lite,,C,0,"To determine the correct meaning of the Kashmiri proverb **""Bozit zur tah dishit un""**, let's look at its literal translation and cultural context:  * **Literal translation:** ""Hearing [even though] deaf, and seeing [even though] blind."" * **Meaning:** It refers to someone who is fully aware of a si"
+43,roman,gemini-3.5-flash-lite,C,C,1,[rescued] C
 44,roman,gemini-3.5-flash-lite,A,C,0,A
-45,roman,gemini-3.5-flash-lite,,C,0,"To determine the meaning of the Kashmiri proverb **""Buchik phuharih tah nindarih pathur""**:  * **Literal Translation:** ""To a hungry person, any food (or chaff); to a sleepy person, a stone (for a pillow)."" * **Meaning:** When someone is in extreme need (hungry or exhausted), they are not particular"
-46,roman,gemini-3.5-flash-lite,,B,0,"To determine the meaning of the Kashmiri proverb *""Bujih labyav kujih tal tsunt; adah gayih phut hit""*:  * Literal context/breakdown: It translates roughly to ""By understanding/searching, an apple was found under a thorn bush; then it got smashed/broken.""  * Deeper meaning: It signifies that when on"
+45,roman,gemini-3.5-flash-lite,C,C,1,[rescued] C
+46,roman,gemini-3.5-flash-lite,A,B,0,[rescued] A
 47,roman,gemini-3.5-flash-lite,C,C,1,C
 48,roman,gemini-3.5-flash-lite,C,D,0,C
 49,roman,gemini-3.5-flash-lite,D,D,1,"The Kashmiri proverb ""Chhění mụt chhěh wazán"" translates literally to ""Empty vessels make the most sound"" (or ""An empty pot rattles the most"").   Answer: D"
-50,roman,gemini-3.5-flash-lite,,D,0,"To determine the correct meaning of the Kashmiri proverb **""Dachhun atkah chhuh chhalún khowaris, tah khowur alhah chhuh chhalún dachhinis""**, let's look at its literal translation and cultural context:  * *Literal Translation:* ""The right hand washes the left hand, and the left hand washes the righ"
+50,roman,gemini-3.5-flash-lite,D,D,1,"To determine the meaning of the Kashmiri proverb **""Dachhun atkah chhuh chhalún khowaris, tah khowur alhah chhuh chhalún dachhinis""**, let's look at its literal translation and cultural context:  * **Literal translation:** ""The right [hand] washes the left [hand], and the left [hand] washes the righ"
 51,roman,gemini-3.5-flash-lite,A,D,0,A
 52,roman,gemini-3.5-flash-lite,A,A,1,A
-53,roman,gemini-3.5-flash-lite,,D,0,"To determine the correct meaning of the Kashmiri proverb *""Dai ai diyih tah barah nyásai; Dai nai diyih tah krúhah sásah tsatit kyah?""* (Literal translation: If God gives, He fills the granary through the door; if God doesn't give, what is the use of cutting a thousand bundles of grass/straw?), we l"
+53,roman,gemini-3.5-flash-lite,D,D,1,D
 54,roman,gemini-3.5-flash-lite,A,A,1,A
 55,roman,gemini-3.5-flash-lite,D,D,1,D
-56,roman,gemini-3.5-flash-lite,,A,0,"To determine the correct meaning of the Kashmiri proverb **""Dúndas lov tah watshis gěd""**, let's look at its literal translation and cultural context:  * **Literal meaning:** ""A kick for the calf (or the one who is absent/idle) and a blow of the fist for the one who works/arrives (or the deserving o"
-57,roman,gemini-3.5-flash-lite,,A,0,"To determine the correct meaning of the Kashmiri proverb *""Dapahas ai ábas gatshun gatshih khushkas; Dapahas ai khushkas gatshun gatshih ábas""* (literally: ""When told to go into the water, he goes into the dry land; when told to go onto the dry land, he goes into the water""), let's look at its tradi"
-58,roman,gemini-3.5-flash-lite,,B,0,"To determine the correct meaning of the Kashmiri proverb **""Daryawik malakh ganzrani""**:  * Literal translation context: It translates roughly to ""Keeping wealth from the river"" or ""Gathering foam/water from the river.""  * Figurative meaning: It refers to trying to hold onto or manage something that"
+56,roman,gemini-3.5-flash-lite,A,A,1,A
+57,roman,gemini-3.5-flash-lite,A,A,1,"To determine the meaning of the Kashmiri proverb:  *Literal Translation:* ""If told to go to the water, they go to the dry land; if told to go to the dry land, they go to the water.""  This describes someone who persistently does the exact opposite of what is asked, making them completely contrary, mu"
+58,roman,gemini-3.5-flash-lite,B,B,1,"To determine the correct meaning of the Kashmiri proverb **""Daryawik malakh ganzrani""**:  *Literal Translation:* ""Collecting the foam/froth of the river."" *Meaning:* Trying to collect or hold river foam is an impossible task, but sometimes people attempt foolish or impossible enterprises that surpri"
 59,roman,gemini-3.5-flash-lite,B,B,1,B
 60,roman,gemini-3.5-flash-lite,A,A,1,A
 61,roman,gemini-3.5-flash-lite,A,A,1,A
 62,roman,gemini-3.5-flash-lite,A,C,0,A
-63,roman,gemini-3.5-flash-lite,,C,0,"To determine the correct meaning of the Kashmiri proverb **""Dog dit tih bárav; dog het tih bárav""**, let's look at its literal translation and cultural context.  * **Literal Translation:** ""Whether I gave blows, he cried; whether I received blows, he cried."" (Alternatively translated in Kashmiri fol"
-64,roman,gemini-3.5-flash-lite,,C,0,"To determine the correct meaning of the Kashmiri proverb *""Don bútsan hunz har gayih wahráts hund rúd""*, let's look at its literal translation and cultural context.   * *Don bútsan hunz har* translates roughly to ""the barking of stray dogs"" or ""noise/quarrels of worthless people."" * *Wahráts hund rú"
+63,roman,gemini-3.5-flash-lite,C,C,1,"To determine the correct meaning of the Kashmiri proverb **""Dog dit tih bárav; dog het tih bárav""** (Literal translation: ""If a blow is given, he weries/complains; if a blow is received, he weries/complains""):  This proverb describes someone who complains or grumbles regardless of the situation—whet"
+64,roman,gemini-3.5-flash-lite,A,C,0,[rescued] A
 65,roman,gemini-3.5-flash-lite,C,B,0,C
 66,roman,gemini-3.5-flash-lite,C,C,1,C
 67,roman,gemini-3.5-flash-lite,C,C,1,C
@@ -72,50 +72,50 @@
 71,roman,gemini-3.5-flash-lite,C,C,1,C
 72,roman,gemini-3.5-flash-lite,D,A,0,D
 73,roman,gemini-3.5-flash-lite,A,A,1,A
-74,roman,gemini-3.5-flash-lite,,D,0,"To determine the correct meaning of the Kashmiri proverb **""Gagur chhuh karán bráris mát""** (literally: ""The mouse challenges/taunts the cat""):  This proverb describes a situation where a weak or insignificant person acts boldly, defiantly, or overconfidently against someone who is vastly superior a"
+74,roman,gemini-3.5-flash-lite,D,D,1,[rescued] D
 75,roman,gemini-3.5-flash-lite,B,B,1,B
 76,roman,gemini-3.5-flash-lite,A,A,1,A
-77,roman,gemini-3.5-flash-lite,,B,0,"To determine the correct meaning of the Kashmiri proverb **""Gámuk suh tah shahruk hún chhuh barábar""** (literally translating to ""A village noble/leader and a city dog are equal""), let's analyze its cultural context:  In traditional Kashmiri society, a *suh* (a prominent, respected village elder or "
-78,roman,gemini-3.5-flash-lite,,C,0,"To determine the correct meaning of the Kashmiri proverb **""Gámas garah karyú wód?""**, let's look at its literal translation and cultural context.  * **Literal Translation:** ""Did you complain of your home to the village?"" or ""Taking one's domestic grievances to the public/village."" * **Meaning:** W"
+77,roman,gemini-3.5-flash-lite,B,B,1,[rescued] B
+78,roman,gemini-3.5-flash-lite,A,C,0,"To determine the meaning of the Kashmiri proverb **""Gámas garah karyú wód?""**, let's look at its literal translation and cultural context.   * **Literal meaning:** ""Shall I cry (or complain) about my home to a stranger/villager?"" or ""Should I tell the village about my domestic sorrow?"" * **Cultural "
 79,roman,gemini-3.5-flash-lite,A,A,1,A
-80,roman,gemini-3.5-flash-lite,,A,0,"To determine the meaning of the Kashmiri proverb **""Gar peth zámuthur bar peth hún""** (literally translating to: ""Born at home, but a dog at the door""):  This proverb describes a person who has status or a proper home of their own (born at home/family), but because of dependency, poor choices, or su"
-81,roman,gemini-3.5-flash-lite,,D,0,"To determine the correct option, let's look at the Kashmiri proverb:  **""Garah wandai garah sásá garah nerahah nah zah""**  *(Literal translation: ""I would sacrifice thousands of homes for the home, but may you never have to leave your home."")*  This proverb expresses a deep sense of affection, attac"
+80,roman,gemini-3.5-flash-lite,A,A,1,[rescued] A
+81,roman,gemini-3.5-flash-lite,A,D,0,A
 82,roman,gemini-3.5-flash-lite,A,A,1,A
 83,roman,gemini-3.5-flash-lite,D,D,1,D
-84,roman,gemini-3.5-flash-lite,,B,0,"To determine the meaning of the Kashmiri proverb **""Gurin lágík náe tah khar gai padar dúrit""** (literally translating to something like: ""Horses got iron shoes, and donkeys got heels broken/scratched"" or comparing the treatment of high-bred horses versus common donkeys/mules in terms of honors or b"
+84,roman,gemini-3.5-flash-lite,B,B,1,"To determine the correct meaning of the Kashmiri proverb **""Gurin lágík náe tah khar gai padar dúrit""** (literally translating to: ""Horses are shod, and the donkey goes about seeking iron/horseshoes for its feet"" or ""Horses get iron shoes, while the donkey lifts its hoof to be shod too""):  This prov"
 85,roman,gemini-3.5-flash-lite,B,D,0,B
 86,roman,gemini-3.5-flash-lite,C,C,1,C
 87,roman,gemini-3.5-flash-lite,C,C,1,C
-88,roman,gemini-3.5-flash-lite,,D,0,"To determine the correct meaning of the Kashmiri proverb **""Hardah gurus mētras, sontah gurus shětras""**, let's look at its translation and cultural context:  * **Hardah** = In autumn (harvest season) * **gurus** = give/distribute * **mētras** = to friends / loved ones * **sontah** = In spring (seas"
-89,roman,gemini-3.5-flash-lite,,D,0,"To determine the correct meaning of the Kashmiri proverb **""Harafas gawéh tah mendis sharík""**:  *   **Literal breakdown:** ""Harafas"" (to the witness/oath) and ""gawéh"" (evidence/testimony), ""tah"" (and), ""mendis"" (to the debtor/obligation) ""sharík"" (partner/party involved).  *   **Context/Meaning:** "
+88,roman,gemini-3.5-flash-lite,D,D,1,"To determine the correct meaning of the Kashmiri proverb **""Hardah gurus mētras, sontah gurus shětras""**, let's look at its translation and cultural context:  * **Hardah** = In autumn (harvest season) * **gurus** = give/distribute * **mētras** = to friends/loved ones * **sontah** = in spring (season"
+89,roman,gemini-3.5-flash-lite,D,D,1,[rescued] D
 90,roman,gemini-3.5-flash-lite,A,B,0,A
 91,roman,gemini-3.5-flash-lite,B,A,0,B
-92,roman,gemini-3.5-flash-lite,,B,0,"To answer this question, let's look at the Kashmiri proverb **""Haramukhuk Gosúni""** (Gosúni of Haramukh).   Haramukh is a famous mountain peak in Kashmir. According to folklore, a ""Gosúni"" (sage or ascetic) lived on or near Mount Haramukh, and he is traditionally depicted as engaging in endless, rep"
-93,roman,gemini-3.5-flash-lite,,D,0,"To determine the correct meaning of the Kashmiri proverb **""Hash tih bad tah nosh tih bad lěj duz tah walih kus?""** (literally translating to: ""The mother-in-law is bad and the daughter-in-law is bad, the pot leaked—so who is going to fix/save it?""), let's look at its cultural and metaphorical appli"
+92,roman,gemini-3.5-flash-lite,B,B,1,B
+93,roman,gemini-3.5-flash-lite,A,D,0,A
 94,roman,gemini-3.5-flash-lite,B,B,1,B
-95,roman,gemini-3.5-flash-lite,,A,0,"To determine the meaning of the Kashmiri proverb **""Húnis mukhtahár""** (literally meaning ""A string of pearls for a dog""):  * **Hún** translates to ""dog"". * **Mukhtahár** translates to a ""pearl necklace"" or ""string of pearls"".  This proverb signifies giving something extremely valuable, precious, or"
+95,roman,gemini-3.5-flash-lite,A,A,1,"To determine the meaning of the Kashmiri proverb **""Húnis mukhtahár""** (literally: ""A pearl necklace for a dog""):  This proverb describes the act of giving something precious, refined, or valuable to someone who cannot appreciate or understand its worth—equivalent to casting pearls before swine.  An"
 96,roman,gemini-3.5-flash-lite,B,A,0,B
-97,roman,gemini-3.5-flash-lite,,B,0,"To determine the correct meaning of the Kashmiri proverb **""Jangas manz chhai thíl tih tah gúli tih""** (literally: ""In war, there are both slingshots/arrows and bullets/losses, or wounds and rewards""):  The proverb signifies that in any great conflict, high-stakes venture, or struggle, one must be p"
+97,roman,gemini-3.5-flash-lite,B,B,1,"To determine the correct meaning of the Kashmiri proverb **""Jangas manz chhai thíl tih tah gúli tih""** (literally translating to ""In war, there are both shields/protection and bullets/death""), we look at its underlying metaphor. The proverb conveys that in any dangerous, high-stakes endeavor or conf"
 98,roman,gemini-3.5-flash-lite,A,A,1,A
-99,roman,gemini-3.5-flash-lite,,B,0,"To determine the correct meaning of the Kashmiri proverb **""Kahan gáv ruvmutj""**:  In Kashmiri, this phrase translates literally to ""The lost cow,"" but idiomatically it refers to a collective loss or misfortune that is shared among many, thereby reducing the individual sense of grief or burden.   Th"
-100,roman,gemini-3.5-flash-lite,,D,0,"To determine the correct meaning of the Kashmiri proverb **""Kahan kah watah""** (literally translating to ""Nine to eleven paths/ways""), let's look at its cultural and linguistic context.   In Kashmiri, this phrase describes a situation of utter confusion, chaos, or total lack of coordination, where a"
+99,roman,gemini-3.5-flash-lite,B,B,1,[rescued] B
+100,roman,gemini-3.5-flash-lite,D,D,1,"To determine the meaning of the Kashmiri proverb **""Kahan kah watah""**, let's look at its literal and cultural translation:  * *Kahan* means eleven. * *Kah* means ten. * *Watah* means paths or ways.  Literally translating to ""Ten ways, eleven paths,"" the proverb describes a situation of absolute cha"
 101,roman,gemini-3.5-flash-lite,D,D,1,The correct answer is **D**.
-102,roman,gemini-3.5-flash-lite,,B,0,"To determine the correct meaning of the Kashmiri proverb **""Áv tah jív chhus barábar""**:  Literal breakdown from Kashmiri: *Áv* (Water) and *jív* (Tongue) *chhus barábar* (are equal/the same).  This proverb is typically used in the context of legal or administrative harassment (specifically extortio"
+102,roman,gemini-3.5-flash-lite,C,B,0,[rescued] C
 103,roman,gemini-3.5-flash-lite,C,D,0,C
 104,roman,gemini-3.5-flash-lite,C,B,0,C
 105,roman,gemini-3.5-flash-lite,A,D,0,A
 106,roman,gemini-3.5-flash-lite,B,A,0,B
 107,roman,gemini-3.5-flash-lite,C,C,1,C
 108,roman,gemini-3.5-flash-lite,A,A,1,A
-109,roman,gemini-3.5-flash-lite,,C,0,"To determine the correct meaning of the Kashmiri proverb **""Kanah-dol chhui Botani soddhas barábar""**:  - **Literal translation/Context:** ""A handful of dust is equal to a Bhot's (Ladakhi's) purity/cleansing"" or similar cultural idioms referring to worthless or mismatched comparisons, but specifical"
-110,roman,gemini-3.5-flash-lite,,D,0,"To determine the correct meaning of the Kashmiri proverb **""Mam thawih izzat tah gam tih thawih izzat""**, let's look at its literal translation and cultural context:  * **Literal meaning:** ""Respect the maternal uncle (Mam), and respect the grief/sorrow too."" (Or metaphorically, to humor and endure "
+109,roman,gemini-3.5-flash-lite,B,C,0,B
+110,roman,gemini-3.5-flash-lite,A,D,0,"To determine the correct meaning of the Kashmiri proverb **""Mam thawih izzat tah gam tih thawih izzat""**, let's look at its translation and cultural context.   The proverb literally translates to: *""Respect your maternal uncle (mam), and respect his grief/troubles too.""* In traditional Kashmiri soci"
 111,roman,gemini-3.5-flash-lite,D,D,1,D
-112,roman,gemini-3.5-flash-lite,,D,0,"To find the meaning of the Kashmiri proverb *""Manz gani manzamis; kalah sardaras; lat gunahgaras tah becharas""*:  Let's break down the literal meaning of the phrase: * *Manz gani manzamis*: To the middle person/intermediary goes the middle share (or the waist/middle part of the body). * *Kalah sarda"
+112,roman,gemini-3.5-flash-lite,D,D,1,"To determine the meaning of the Kashmiri proverb **""Manz gani manzamis; kalah sardaras; lat gunahgaras tah becharas""**:  * Literal/Traditional context: This traditional Kashmiri distribution formula (often associated with the sharing of a sheep or large catch) assigns parts based on status or role—t"
 113,roman,gemini-3.5-flash-lite,D,D,1,D
 114,roman,gemini-3.5-flash-lite,A,D,0,A
 115,roman,gemini-3.5-flash-lite,A,A,1,A
 116,roman,gemini-3.5-flash-lite,C,C,1,C
-117,roman,gemini-3.5-flash-lite,,B,0,"To determine the correct meaning of the Kashmiri proverb **""Wuchhit un tah bozit zur""**:  * **Wuchhit un** translates to ""being blind after having seen"" or ""feigning blindness despite seeing."" * **Bozit zur** translates to ""acting deaf after having heard"" or ""feigning deafness despite hearing.""  Thi"
+117,roman,gemini-3.5-flash-lite,B,B,1,"To determine the correct meaning of the Kashmiri proverb **""Wuchhit un tah bozit zur""**:  * **Wuchhit** means ""having seen"" or ""knowing well"". * **Un** means ""blindness"" or ""feigning blindness"". * **Bozit** means ""having heard"" or ""knowing well"". * **Zur** means ""deafness"" or ""feigning deafness"".  L"
 118,roman,gemini-3.5-flash-lite,C,D,0,C
 119,roman,gemini-3.5-flash-lite,A,B,0,"To determine the meaning of the Kashmiri proverb **""Wupasladas chhuh hún patai""** (literally translating to ""behind the loose-tongued/abusive person is a dog/trouble"" or relating the consequences of an unguarded tongue):  The correct option is **A**."
-120,roman,gemini-3.5-flash-lite,,B,0,"To determine the correct meaning of the Kashmiri proverb **""Wurun wuchhit gachhih khor waharun""** (Literal translation: *Stretching one's legs according to the size of the blanket/bedsheet*):  This proverb is equivalent to the English idiom ""Cut your coat according to your cloth,"" which advises livi"
+120,roman,gemini-3.5-flash-lite,B,B,1,B

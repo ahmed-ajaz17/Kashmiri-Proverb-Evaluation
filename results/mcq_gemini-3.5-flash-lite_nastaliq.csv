@@ -2,72 +2,72 @@
 1,nastaliq,gemini-3.5-flash-lite,C,B,0,C
 2,nastaliq,gemini-3.5-flash-lite,A,A,1,A
 3,nastaliq,gemini-3.5-flash-lite,C,A,0,C
-4,nastaliq,gemini-3.5-flash-lite,,D,0,"To determine the correct meaning of the Kashmiri proverb **""اَچھ کٲنؠ جان تَہ وَتھ کٲنؠ نَہ""** (Achh kani jaan ta vath kani na):  *   **Literal translation:** ""One-eyed in the eye is good, but one-eyed on the path is no good"" (often interpreted in cultural context regarding outward appearances versu"
-5,nastaliq,gemini-3.5-flash-lite,,C,0,"To determine the correct meaning of the Kashmiri proverb **""اَچھ وَژھِہ تَہ گاشِہ رٔژھِہ""** (Achh wazhih tah gashih rzheh):  * *Achh* means eye. * *Wazhih* means hurt/pain. * *Gash* means light/vision. * *Rzheh* means loss/damage.  Literally translating to ""Even the eye hurts and loses its light/vis"
-6,nastaliq,gemini-3.5-flash-lite,,C,0,"To determine the correct meaning of the Kashmiri proverb **""اَچھِو اَنٛدَرٕ کٔڈِتھ سُرمَہ""** (Literally: ""Extracting even the collyrium/kajal from inside the eyes""):  This idiom is used to describe someone who is extremely clever, cunning, or a consummate thief who can steal something right from und"
+4,nastaliq,gemini-3.5-flash-lite,A,D,0,[rescued] A
+5,nastaliq,gemini-3.5-flash-lite,A,C,0,"To determine the correct meaning of the Kashmiri proverb **""اَچھ وَژھِہ تَہ گاشِہ رٔژھِہ""** (Achh wazhih tah gashih ruzhih):  In literal terms, this proverb translates to something like ""Even the eye will tear up and the beam of light will react/dim when poked or affected."" It is used to convey that"
+6,nastaliq,gemini-3.5-flash-lite,C,C,1,"To answer this, let's look at the literal and figurative meaning of the Kashmiri proverb **اَچھِو اَنٛدَرٕ کٔڈِتھ سُرمَہ** (Romanized: *Achhiv andarau kadith surmah*), which literally translates to ""extracting kohl (eyeliner) from inside the eyes.""   This proverb is used to describe someone who is e"
 7,nastaliq,gemini-3.5-flash-lite,B,B,1,B
 8,nastaliq,gemini-3.5-flash-lite,C,D,0,C
 9,nastaliq,gemini-3.5-flash-lite,C,C,1,C
 10,nastaliq,gemini-3.5-flash-lite,C,C,1,C
-11,nastaliq,gemini-3.5-flash-lite,,B,0,"To determine the correct meaning of the Kashmiri proverb **""آگَہ بۆڈ پَہَرَس، نَوکَر بۆڈ وَہَرَس""** (Agah bod paharas, nawkar bod waharas):  * **آگَہ (Agah)** refers to a master, employer, or landlord. * **پَہَرَس (Paharas)** refers to a *pahar* (a traditional unit of time equal to 3 hours). * **نَو"
+11,nastaliq,gemini-3.5-flash-lite,B,B,1,[rescued] B
 12,nastaliq,gemini-3.5-flash-lite,A,A,1,A
 13,nastaliq,gemini-3.5-flash-lite,C,C,1,C
-14,nastaliq,gemini-3.5-flash-lite,,B,0,"To determine the correct meaning of the Kashmiri proverb **""اَکھ گۆو جانی یار، بیٛاکھ گۆو نانی یار""** (Akh gow jani yaar, byakh gow naani yaar):  * *Jani yaar* translates literally to a friend of the soul/life (a true, devoted friend). * *Naani yaar* (or *naan* related to bread/food) translates to a"
+14,nastaliq,gemini-3.5-flash-lite,B,B,1,"To determine the correct meaning of the Kashmiri proverb **""اَکھ گۆو جانی یار، بیٛاکھ گۆو نانی یار""** (Akh gow jaani yaar, byaakh gow naani yaar):  * *Jaan* (جانی) refers to life, soul, or genuine affection. * *Naan* (نانی) or *Naun* relates to bread/food (material sustenance).  The proverb translat"
 15,nastaliq,gemini-3.5-flash-lite,B,B,1,B
 16,nastaliq,gemini-3.5-flash-lite,A,C,0,**A**
 17,nastaliq,gemini-3.5-flash-lite,B,B,1,B
 18,nastaliq,gemini-3.5-flash-lite,A,A,1,A
 19,nastaliq,gemini-3.5-flash-lite,C,D,0,C
-20,nastaliq,gemini-3.5-flash-lite,,C,0,"To determine the correct meaning of the Kashmiri proverb ""**اَنِم سۄے، وَوُم سۄے، لٔجِم سۄے پانَسٔے**"" (Anim soy, vovum soy, lëjim soy panasëy - literally: ""I brought it, I sowed it, I reaped it upon myself""), let's look at its traditional folkloric meaning.   The proverb translates figuratively to:"
+20,nastaliq,gemini-3.5-flash-lite,A,C,0,[rescued] A
 21,nastaliq,gemini-3.5-flash-lite,B,B,1,B
 22,nastaliq,gemini-3.5-flash-lite,C,C,1,C
-23,nastaliq,gemini-3.5-flash-lite,,D,0,"To determine the meaning of the Kashmiri proverb **""آسُن چُھہ ہیٚچھِناوَن، نَہ آسُن چُھہ مَنٛدَچھاوَن""** (Aasun chuhe hechinavan, na aasun chuhe mandachhavan):  * **آسُن (Aasun):** To smile / To laugh / Prosperity / Affluence (derived metaphorically from ease or having enough). * **چُھہ ہیٚچھِناوَن "
-24,nastaliq,gemini-3.5-flash-lite,,D,0,"To determine the correct meaning of the Kashmiri proverb **""اَتھَہ چھُل تَہ میٖترُت ژُل""** (Athah chhul ta meetrut zhul):  * *Athah chhul* translates to ""washing hands"" (implying the end of a feast or hospitality). * *Meetrut zhul* translates to ""friendship vanished"" or ""the friend/guest leaves.""  T"
-25,nastaliq,gemini-3.5-flash-lite,,A,0,"To determine the correct meaning of the Kashmiri proverb **""اَتھَن ؤریَن پۆکھ نَد، شؠٹھَن ؤریَن پۆکھ سرؠہ""** (Athan wariyan pokh nad, shethan wariyan pokh sryah), let's look at its literal and cultural context.   In Kashmiri folklore and proverbs, this specific saying refers to the different fates o"
-26,nastaliq,gemini-3.5-flash-lite,,A,0,"To determine the correct meaning of the Kashmiri proverb **""بابَہ آدَمَس زایِہ زٕ گَبٕر، اَکِ رۆٹ سْوَرَنِہ بیٚیِہ رۆٹ قَبِر""** (Literally: ""Baba Adam had two sons, one took to the golden swing [Heaven/bliss], the other took to the grave [Hell/perdition]""), we look at its figurative application.   T"
+23,nastaliq,gemini-3.5-flash-lite,D,D,1,"To determine the correct meaning of the Kashmiri proverb **""آسُن چُھہ ہیٚچھِناوَن، نَہ آسُن چُھہ مَنٛدَچھاوَن""** (Aasun chuhe hechinawan, na aasun chuhe mandachhawan):  * *Aasun* means to laugh / smiling / presence of wealth/resources/cheer. * *Na aasun* means not laughing / crying / poverty / lack "
+24,nastaliq,gemini-3.5-flash-lite,D,D,1,"To determine the correct meaning of the Kashmiri proverb **""اتھَہ چھُل تہ میٖترُت ژُل"" (Athah chhul ta metrüt zhul)**:  * **Literal Translation:** ""Wash your hands and friendship is gone"" or ""Once hands are washed, the friendship/relation vanishes."" * **Meaning:** It refers to people who are only ar"
+25,nastaliq,gemini-3.5-flash-lite,B,A,0,[rescued] B
+26,nastaliq,gemini-3.5-flash-lite,A,A,1,[rescued] A
 27,nastaliq,gemini-3.5-flash-lite,C,C,1,C
-28,nastaliq,gemini-3.5-flash-lite,,C,0,"To determine the correct option, let's look at the Kashmiri proverb provided:  **Proverb:** *Bābā matyov ta dēḍ tih matyih* (بابَہ مَتٛیۆو تَہ دیٚڈ تِہ مَتٕیِہ) **Literal Translation:** ""The father went mad, and the mother went mad too."" / ""Both the father and the mother lost their minds."" **Figurat"
+28,nastaliq,gemini-3.5-flash-lite,C,C,1,[rescued] C
 29,nastaliq,gemini-3.5-flash-lite,A,A,1,A
 30,nastaliq,gemini-3.5-flash-lite,C,C,1,C
-31,nastaliq,gemini-3.5-flash-lite,,B,0,"To determine the meaning of the Kashmiri proverb **""بَہْلول، جَنٛدَہ، تَہ کَشکول""** (Bahlol, jandah, tah kashkol):  * **Bahlol** refers to a legendary wise fool (often associated with wise eccentricity or simplicity). * **Jandah** means tattered clothes or rags. * **Kashkol** is a beggar's bowl.  To"
+31,nastaliq,gemini-3.5-flash-lite,B,B,1,B
 32,nastaliq,gemini-3.5-flash-lite,C,C,1,C
 33,nastaliq,gemini-3.5-flash-lite,D,B,0,D
 34,nastaliq,gemini-3.5-flash-lite,D,D,1,D
-35,nastaliq,gemini-3.5-flash-lite,,B,0,"To determine the correct meaning of the Kashmiri proverb **""بَر دِتھ خَر نَژان"" (Bar dith khar nazhan)**:  * **Literal Translation:** ""Seeing the door, the donkey brays/kicks/shows off"" (or behaving defiantly/arrogantly only when safely behind closed doors or within one's own domain). * **Cultural C"
-36,nastaliq,gemini-3.5-flash-lite,,B,0,"To determine the meaning of the Kashmiri proverb **بَتَہ گَردَن** (pronounced *bata gardan*), let's look at its literal translation and cultural context:  * *Bata* literally means ""cooked rice"" or ""meal."" * *Gardan* means ""neck"" or ""throat.""  Historically, in Kashmiri culture, if someone committed a"
-37,nastaliq,gemini-3.5-flash-lite,,A,0,"To determine the correct meaning of the Kashmiri proverb **بَتَہ گٲجِہ رُہُن** (Bata gãji ruhun):  Literally translating to ""staying in a cooking pot/rice pot of thunder"" or ""intrusion into the rice pot,"" this idiom metaphorically describes an unwanted, inappropriate, or deeply intrusive presence in"
-38,nastaliq,gemini-3.5-flash-lite,,A,0,"To determine the correct meaning of the Kashmiri proverb **بَتَہ مود شَنٛکِہ** (pronounced: *Bata moh shankih*), let's look at its literal translation and cultural context.   - *Bata* means cooked rice or food. - *Moh* means lost or spoiled/ruined. - *Shankih* means doubt, hesitation, or suspicion ("
-39,nastaliq,gemini-3.5-flash-lite,,C,0,"To determine the correct meaning of the Kashmiri proverb **""بَتَس بَتَہ کاوِ بَتَہ""** (pronounced roughly as *batas bata kavi bata*):  In literal terms, this proverb translates to ""Rice to the rice-eater, a share/beating to the crow."" Culturally and metaphorically in Kashmiri idiom, it refers to the"
-40,nastaliq,gemini-3.5-flash-lite,,D,0,"To determine the correct meaning of the Kashmiri proverb **""بؠکَل نَہ کانٛہہ تَہ گَرٕ پَتھَہ کاہ کاہ""** (Bekal na kaanh ta garh patah kah kah):  * **Literal Translation:** ""Nobody is in control (or nobody listens), and at home, everyone is the master/boss (doing as they please)."" * **Meaning:** It d"
-41,nastaliq,gemini-3.5-flash-lite,,C,0,"To determine the correct meaning of the Kashmiri proverb **""بؠمَہ ہَہَرَو چُھہ سُہ مۆرمُت""** (*Bema haharav chhuh su mormut*):  Literal translation context: ""The foolish friend has killed him"" (often associated with the fable of the bear and the gardener where a well-meaning but foolish bear kills h"
+35,nastaliq,gemini-3.5-flash-lite,A,B,0,[rescued] A
+36,nastaliq,gemini-3.5-flash-lite,A,B,0,[rescued] A
+37,nastaliq,gemini-3.5-flash-lite,A,A,1,"To determine the correct meaning of the Kashmiri proverb **""بَتَہ گٲجِہ رُہُن"" (Bata gājih ruhun)**:  Literally translating to ""staying in a rice-pudding vessel"" or similar domestic contexts, this idiom is metaphorically used to describe an unwelcome, highly inappropriate, or intrusive presence—some"
+38,nastaliq,gemini-3.5-flash-lite,A,A,1,[rescued] A
+39,nastaliq,gemini-3.5-flash-lite,A,C,0,[rescued] A
+40,nastaliq,gemini-3.5-flash-lite,A,D,0,[rescued] A
+41,nastaliq,gemini-3.5-flash-lite,B,C,0,[rescued] B
 42,nastaliq,gemini-3.5-flash-lite,B,D,0,B
-43,nastaliq,gemini-3.5-flash-lite,,C,0,"To determine the correct meaning of the Kashmiri proverb **""بوٗزِتھ زوٗر تَہ دِچھِتھ اوُن""** (pronounced *Buzith zoor tah dichhith oun*):  * Literal translation: ""Pretending to be deaf after hearing, and pretending to be blind after seeing."" * Meaning: It refers to tactical discretion, where a perso"
+43,nastaliq,gemini-3.5-flash-lite,C,C,1,[rescued] C
 44,nastaliq,gemini-3.5-flash-lite,C,C,1,C
 45,nastaliq,gemini-3.5-flash-lite,C,C,1,C
 46,nastaliq,gemini-3.5-flash-lite,A,B,0,A
 47,nastaliq,gemini-3.5-flash-lite,C,C,1,C
 48,nastaliq,gemini-3.5-flash-lite,C,D,0,C
 49,nastaliq,gemini-3.5-flash-lite,D,D,1,D
-50,nastaliq,gemini-3.5-flash-lite,,D,0,"To determine the correct meaning of the Kashmiri proverb **""دَچھُن اَتھَہ چُھہ چھَلان کھۆوَرس، تَہ کھۆوُر اَتھَہ چُھہ چھَلان دَچھنِس""** (Literally: ""The right hand washes the left hand, and the left hand washes the right hand""):  This proverb emphasizes the necessity of helping one another, teamwork"
+50,nastaliq,gemini-3.5-flash-lite,D,D,1,[rescued] D
 51,nastaliq,gemini-3.5-flash-lite,A,D,0,A
 52,nastaliq,gemini-3.5-flash-lite,A,A,1,A
-53,nastaliq,gemini-3.5-flash-lite,,D,0,"To determine the correct meaning of the Kashmiri proverb:  **دَی اَی دِیِہ تَہ بَرَس نؠرَسَی، دَی نَی دِیِہ تَہ کروٗہَس ساسَہ ژٔٹِتھ کَیاہ؟** (Transliteration: *Day ay diyih tah baras nerasay, day nay diyih tah krohas sasa zhitith kayah?*)  Literal translation: ""If God gives, it will come through th"
+53,nastaliq,gemini-3.5-flash-lite,A,D,0,[rescued] A
 54,nastaliq,gemini-3.5-flash-lite,A,A,1,**A**
-55,nastaliq,gemini-3.5-flash-lite,,D,0,"To determine the correct meaning of the Kashmiri proverb **""داندَس چِھیا ہؠنٛگ گۆبان؟""** (Transliteration: *Dandas chhia heng goban?*):  In literal terms, it translates to something like *""Are horns ever felt as a burden by the bull?""* (or *""Does a bull find its own horns heavy?""*). Symbolically, th"
+55,nastaliq,gemini-3.5-flash-lite,D,D,1,"To determine the correct meaning of the Kashmiri proverb **""داندَس چِھیا ہؠنٛگ گۆبان؟""** (Transliteration: *Dandas chhia heng goban?*):  In literal terms, it translates to something like: ""Are horns being sown/planted for the bull?"" (or ""Does one sow horns for a bull?""). A bull naturally grows its o"
 56,nastaliq,gemini-3.5-flash-lite,A,A,1,A
-57,nastaliq,gemini-3.5-flash-lite,,A,0,"To determine the correct meaning of the Kashmiri proverb *""دَپَہَس اَی آبَس گَژھُن گَژھِہ خُشکَس، دَپَہَس اَی خُشکَس گَژھُن گَژھِہ آبَس""* (literally: ""When told to go to the water, they go to the dry land; when told to go to the dry land, they go to the water""):  This proverb describes someone who p"
+57,nastaliq,gemini-3.5-flash-lite,D,A,0,"To determine the correct meaning of the Kashmiri proverb **""دَپَہَس اَی آبَس گَژھُن گَژھِہ خُشکَس، دَپَہَس اَی خُشکَس گَژھُن گَژھِہ آبَس""** (Literally: ""When told to go to the water, he goes to the dry land; when told to go to the dry land, he goes to the water"" — or more commonly known as the story"
 58,nastaliq,gemini-3.5-flash-lite,C,B,0,C
 59,nastaliq,gemini-3.5-flash-lite,B,B,1,B
 60,nastaliq,gemini-3.5-flash-lite,A,A,1,A
 61,nastaliq,gemini-3.5-flash-lite,A,A,1,A
 62,nastaliq,gemini-3.5-flash-lite,C,C,1,C
-63,nastaliq,gemini-3.5-flash-lite,,C,0,"To determine the meaning of the Kashmiri proverb **""دۄگ دِتھ تِہ بارَو، دۄگ ہؠتھ تِہ بارَو""** (Dog dith ti barav, dog heth ti barav):  Literal translation: ""Whether giving trouble (pain) or receiving trouble (pain), it is burdensome/troublesome either way"" (often used in the context of foolish or ha"
+63,nastaliq,gemini-3.5-flash-lite,B,C,0,[rescued] B
 64,nastaliq,gemini-3.5-flash-lite,C,C,1,C
-65,nastaliq,gemini-3.5-flash-lite,,B,0,"To determine the correct meaning of the Kashmiri proverb **""دۄن اَنٛگُجَن چُھہ نیران تاس""** (Don angujan chhuh neeran taas):  - **Literal translation:** ""Heat/warmth comes out of two fingers"" or ""Sparks come from two fingers."" - **Figurative meaning:** Friction, conflict, or arguments require intera"
-66,nastaliq,gemini-3.5-flash-lite,,C,0,"To determine the correct meaning of the Kashmiri proverb **""دۄیِہ اَتھَہ چھےٚ ژَر وَزان""** (Doih ath chhě zhar wazan - literally: ""Clapping requires two hands""):  The proverb translates directly to the English idiom ""It takes two hands to clap,"" which is fundamentally about interaction, participatio"
+65,nastaliq,gemini-3.5-flash-lite,B,B,1,"To determine the correct meaning of the Kashmiri proverb **""دۄن اَنٛگُجَن چُھہ نیران تاس""** (Don angujan chhu neeran taas):  - **Literal translation:** ""Steam/heat comes out from two fingers.""  - **Cultural/Idiomatic meaning:** It refers to generating friction, heat, or sparks from a close interacti"
+66,nastaliq,gemini-3.5-flash-lite,C,C,1,[rescued] C
 67,nastaliq,gemini-3.5-flash-lite,C,C,1,C
 68,nastaliq,gemini-3.5-flash-lite,B,B,1,B
-69,nastaliq,gemini-3.5-flash-lite,,D,0,"To determine the correct meaning of the Kashmiri proverb **""دوٗرِہ دوٗرِہ چُھہ مَنَژ میۆٹھ، نَکھَہ نَکھَہ چُھہ قَند تیۆٹھ""** (Doorah doorah chhuh manaz myoth, nakkah nakkah chhuh qand tyoth):  - *Literal translation:* From afar, mas (a type of pulse/food) is sweet; from nearby, even sugar/candy (qan"
+69,nastaliq,gemini-3.5-flash-lite,D,D,1,[rescued] D
 70,nastaliq,gemini-3.5-flash-lite,B,B,1,B
 71,nastaliq,gemini-3.5-flash-lite,C,C,1,C
 72,nastaliq,gemini-3.5-flash-lite,A,A,1,A
@@ -75,47 +75,47 @@
 74,nastaliq,gemini-3.5-flash-lite,D,D,1,**D**
 75,nastaliq,gemini-3.5-flash-lite,B,B,1,B
 76,nastaliq,gemini-3.5-flash-lite,A,A,1,A
-77,nastaliq,gemini-3.5-flash-lite,,B,0,"To determine the correct meaning of the Kashmiri proverb **""گامُک سُہ تَہ شَہْرُک ہُوٗن چُھہ بَرابَر""** (Literally: ""A village gentleman and a city dog are equal""), we look at its cultural connotation.   In traditional Kashmiri society, the proverb is used to highlight the difference in status and s"
-78,nastaliq,gemini-3.5-flash-lite,,C,0,"To determine the correct meaning of the Kashmiri proverb **""گامَس گَرہ کٔرِیا واد؟""** (Transliteration: *Gāmas garh kariyā vād?*):  In literal terms, this asks, ""Can you demand a guarantee/surety or impose your will by building a house in a village?"" or more broadly touches upon the theme of living "
+77,nastaliq,gemini-3.5-flash-lite,C,B,0,[rescued] C
+78,nastaliq,gemini-3.5-flash-lite,A,C,0,[rescued] A
 79,nastaliq,gemini-3.5-flash-lite,A,A,1,A
 80,nastaliq,gemini-3.5-flash-lite,A,A,1,A
-81,nastaliq,gemini-3.5-flash-lite,,D,0,"To determine the correct meaning of the Kashmiri proverb **""گَرہ وَنٛدَے گَرہ ساسَہ، گَرہ نیرَہَہ نَہ زانٛہہ""** (Garh vanday garh saas’h, garh neyar’hah na zanh):  * Literal translation: A home can be divided into a thousand homes, but home (the fundamental sense of family/belonging/roots) is never "
+81,nastaliq,gemini-3.5-flash-lite,A,D,0,[rescued] A
 82,nastaliq,gemini-3.5-flash-lite,A,A,1,A
 83,nastaliq,gemini-3.5-flash-lite,D,D,1,D
 84,nastaliq,gemini-3.5-flash-lite,B,B,1,B
 85,nastaliq,gemini-3.5-flash-lite,B,D,0,B
-86,nastaliq,gemini-3.5-flash-lite,,C,0,"To determine the correct meaning of the Kashmiri proverb **""حَکِیمَس تَہ حاکِمَس نِشِہ رَچھتَم خُدایو""** (Hakeemas ta hakimas nishi rachhtam khudayo):  * *Hakeem* in this context traditionally refers to a physician/doctor, and *Hakim* refers to a ruler, judge, or official in power.  * The phrase tra"
+86,nastaliq,gemini-3.5-flash-lite,C,C,1,"To determine the correct option, let's look at the literal and contextual meaning of the Kashmiri proverb: **""حَکِیمَس تَہ حاکِمَس نِشِہ رَچھتَم خُدایو""** (Hakimas ta hakimas nish rochtam Khudayo).  * **حَکِیم (Hakim):** Physician / Doctor * **حاکِم (Hakim):** Ruler / Authority / Judge * **نِشِہ رَچ"
 87,nastaliq,gemini-3.5-flash-lite,A,C,0,The correct answer is **A**.
 88,nastaliq,gemini-3.5-flash-lite,C,D,0,C
-89,nastaliq,gemini-3.5-flash-lite,,D,0,"To find the correct meaning of the Kashmiri proverb **""عَرَفَن گاوَس تَہ مؠنٛڈِس شٔریٖک""** (Arafan gavas ta mandis sharik):  *Literal translation:* ""Sharing in the cow of Araf (a person) and the bull of Mand (another person).""  *Figurative meaning:* This describes someone who tries to hedge their be"
+89,nastaliq,gemini-3.5-flash-lite,D,D,1,[rescued] D
 90,nastaliq,gemini-3.5-flash-lite,A,B,0,A
 91,nastaliq,gemini-3.5-flash-lite,A,A,1,A
-92,nastaliq,gemini-3.5-flash-lite,,B,0,"To determine the correct meaning of the Kashmiri proverb **""ہَرمُکُھک گوسٲنؠ""** (Harmukhhuk Gosani):  *Harmukh* refers to Mount Harmukh, a prominent and sacred mountain peak in Kashmir, and *Gosani* is an ascetic or sadhu. Literally, it translates to ""The Ascetic of Harmukh.""   Culturally and idioma"
-93,nastaliq,gemini-3.5-flash-lite,,D,0,"To determine the correct meaning of the Kashmiri proverb *""هاش تِہ بَد تَہ نوش تِہ بَد، لێج دَز تَہ والِہ کُس؟""* (Literal translation: ""The mother-in-law is bad and the daughter-in-law is bad; the pot burns, so who cares/who can save it?""):  This proverb describes a situation where mutual hostility,"
-94,nastaliq,gemini-3.5-flash-lite,,B,0,"To determine the correct meaning of the Kashmiri proverb **""ہۄنٛد مَرُن کِہ نَہ کَتھ، لَلِہ نَلوَٹ ژَلِہ نَہ زانٛہہ""** (Hond marun kih na kath, lali nalwat zhalih na zanh):  Literally, it translates to: ""A dog's death is no mention [of significance], and the neck-scarf (or the habit of wearing it) o"
+92,nastaliq,gemini-3.5-flash-lite,B,B,1,"To determine the correct meaning of the Kashmiri proverb **ہَرمُکُھک گوسٲنؠ** (Harmukhuuk Gosaani):  * **Harmukhuuk Gosaani** literally translates to ""The ascetic/holy man of Mount Harmukh,"" a legendary figure in Kashmiri folklore who is said to be engaged in the endless, futile task of separating m"
+93,nastaliq,gemini-3.5-flash-lite,D,D,1,"To determine the correct meaning of the Kashmiri proverb *""Hāsh ti bad ta nosh ti bad, lēj daz ta wāli kus?""* (which translates literally to: ""The mother-in-law is bad and the daughter-in-law is bad; the pot has burned, so who will save it?""), we look at its actual cultural usage.   The proverb desc"
+94,nastaliq,gemini-3.5-flash-lite,B,B,1,[rescued] B
 95,nastaliq,gemini-3.5-flash-lite,C,A,0,C
-96,nastaliq,gemini-3.5-flash-lite,,A,0,"To determine the correct meaning of the Kashmiri proverb **جَہامُک تَموک** (Jahámuk tamuk), let's look at its cultural and linguistic context:  * *Jahám* refers to Jahan (a place known for its quality or a person's name in certain idioms, or simply a reference to a sharp/cunning character), and *tam"
-97,nastaliq,gemini-3.5-flash-lite,,B,0,"To determine the correct option, let's look at the literal and cultural meaning of the Kashmiri proverb **""جَنگَس مَنٛز چھےٚ تھیٖل تِہ تَہ گولِہ تِہ""** (Jangas manz chhe theel tih ta goli tih):  * **Literal translation:** ""In a war, there are both shields (or armor) and bullets (or arrows/threats)."""
+96,nastaliq,gemini-3.5-flash-lite,D,A,0,"To determine the meaning of the Kashmiri proverb **""جَہامُک تَموک""** (Jahámuk tamuk - literally ""Tobacco of Jahám""):  Jahám (or Zaffron/various historical trade regions, often associated with high quality or sharpness in local idiom) tobacco is historically renowned in Kashmiri culture for being exc"
+97,nastaliq,gemini-3.5-flash-lite,B,B,1,"To determine the correct meaning of the Kashmiri proverb **""جَنگَس مَنٛز چھےٚ تھیٖل تِہ تَہ گولِہ تِہ""** (Jangas manz chheh theel tih ta goli tih):  Literal translation: ""In a war, there is both shield and bullet"" (or both protection and hazard/injury).  This implies that in any high-stakes situatio"
 98,nastaliq,gemini-3.5-flash-lite,A,A,1,A
-99,nastaliq,gemini-3.5-flash-lite,,B,0,"To determine the correct meaning of the Kashmiri proverb **""کاہَن گاو رٲومٕژ"" (Kāhan gāv rāwmëts)**:  Literally, it translates to ""having lost eleven cows"" (often referenced in folk stories where someone faces a massive, collective loss). In Kashmiri culture, this proverb is used to describe a situa"
+99,nastaliq,gemini-3.5-flash-lite,B,B,1,[rescued] B
 100,nastaliq,gemini-3.5-flash-lite,D,D,1,D
 101,nastaliq,gemini-3.5-flash-lite,D,D,1,D
-102,nastaliq,gemini-3.5-flash-lite,,B,0,"To determine the correct meaning of the Kashmiri proverb **""آو تَہ جِیو چُھس بَرابَر"" (Aav ta jīw chhus barābar)**:  This literal translation and cultural meaning relate to the phrase ""come or live, it's all the same to me"" or being indifferent to life and death, often describing someone who is care"
+102,nastaliq,gemini-3.5-flash-lite,B,B,1,[rescued] B
 103,nastaliq,gemini-3.5-flash-lite,C,D,0,C
-104,nastaliq,gemini-3.5-flash-lite,,B,0,"To determine the correct meaning of the Kashmiri proverb **""دۄدَس کَنٛڈٕ ژوٗرٕنؠ""** (Dudas kande chooriny), let's look at its literal translation and cultural context:  * **دۄدَس (Dudas):** In/into the milk * **کَنٛڈٕ (Kande):** Thorns * **ژوٗرٕنؠ (Chooriny):** To pick/extract (using tools or effort"
-105,nastaliq,gemini-3.5-flash-lite,,D,0,"To determine the correct meaning of the Kashmiri proverb **""گابِہ تِہ توٗلِہ لَٹ""** (Gaaba tih tuula lat), let's look at its literal translation and cultural context:  * **Literal Meaning:** ""A tail for every cow and a load for every pack-animal"" or ""Each one pulling his own separate way.""  * **Figu"
-106,nastaliq,gemini-3.5-flash-lite,,A,0,"To determine the correct meaning of the Kashmiri proverb **""کامَدیوَن چُھس اَتھَہ ڈالومُت""** (Kāmdīvan chhus athh ḍālomut):  Literal translation/Context: *Kāmdēv* (the god of love and desire) has laid his hands on him/her. It is an expression used when someone is hopelessly smitten, love-struck, or "
+104,nastaliq,gemini-3.5-flash-lite,A,B,0,[rescued] A
+105,nastaliq,gemini-3.5-flash-lite,A,D,0,[rescued] A
+106,nastaliq,gemini-3.5-flash-lite,B,A,0,[rescued] B
 107,nastaliq,gemini-3.5-flash-lite,C,C,1,C
 108,nastaliq,gemini-3.5-flash-lite,A,A,1,A
-109,nastaliq,gemini-3.5-flash-lite,,C,0,"To determine the correct meaning of the Kashmiri proverb **""کَنَہ ڈۆل چُھے بۆٹَنِ سۄدَس بَرابَر""** (Kanh dol chuy botani sudas barabar):  - *Kanah dol* refers to a tiny amount, a trifle, or a very small share/profit. - *Botani sudas barabar* means ""equal to the trade/profit of Botani"" (where Botani/"
-110,nastaliq,gemini-3.5-flash-lite,,D,0,"To determine the correct meaning of the Kashmiri proverb **""مام تھاوِہ عِزَت تَہ گام تِہ تھاوِہ عِزَت""** (Maam thaavih izat ta gaam tih thaavih izat):  * *Maam* means maternal uncle (or respected maternal relative), and *gaam* means village/community. The proverb translates literally to: ""Respect th"
+109,nastaliq,gemini-3.5-flash-lite,A,C,0,[rescued] A
+110,nastaliq,gemini-3.5-flash-lite,C,D,0,[rescued] C
 111,nastaliq,gemini-3.5-flash-lite,D,D,1,D
-112,nastaliq,gemini-3.5-flash-lite,,D,0,"To determine the correct meaning of the Kashmiri proverb *""مَنٛز گٔنؠ مَنٛزٔمِس، کَلَہ سَردارَس، لَٹ گُناہگارَس تَہ بیٚچارَس""* (Manz gany manzamis, kalah sardaras, lat gunahgaras ta beycharas):  This traditional proverb literally translates to: ""The middle/waist [part] goes to the middle one (the av"
-113,nastaliq,gemini-3.5-flash-lite,,D,0,"To find the correct meaning of the Kashmiri proverb **پَشمِینَسٔے چھےٚ نَرمِی** (Pashmeenasay cheh narmi), let's look at its literal translation and cultural context.  * **Literal Meaning:** ""Softness belongs to *pashmina* itself"" (or ""Pashmina is inherently soft"").  * **Proverbial Significance:** *"
+112,nastaliq,gemini-3.5-flash-lite,D,D,1,"To determine the correct meaning of the Kashmiri proverb **""مَنٛز گٔنؠ مَنٛزٔمِس، کَلَہ سَردارَس، لَٹ گُناہگارَس تَہ بیٚچارَس""** (Manz gany manzamis, kala sardaras, lat gunahgaras ta becharas), let's look at its literal breakdown: * *Manz gany manzamis*: The middle/core (kernel) goes to the middle-p"
+113,nastaliq,gemini-3.5-flash-lite,D,D,1,"To determine the correct meaning of the Kashmiri proverb **""پَشمِینَسٔے چھےٚ نَرمِی""** (Pashminas'y chehy narmi):  * *Pashmina* refers to the fine, luxurious Kashmiri wool known for its inherent softness and high quality.  * The proverb translates literally to ""Softness belongs to Pashmina itself"" ("
 114,nastaliq,gemini-3.5-flash-lite,A,D,0,A
 115,nastaliq,gemini-3.5-flash-lite,A,A,1,A
 116,nastaliq,gemini-3.5-flash-lite,C,C,1,C
-117,nastaliq,gemini-3.5-flash-lite,,B,0,To determine the correct meaning of the Kashmiri proverb **وُچھِتھ اوُن تَہ بوٗزِتھ زوٗر** (*Wuchith oun ta boozith zoor*):  * **وُچھِتھ (Wuchith)** = Having seen / knowing well * **اوُن (Oun)** = Acting blind / pretending not to see * **تہ (ta)** = and * **بوٗزِتھ (Boozith)** = Having heard / knowi
+117,nastaliq,gemini-3.5-flash-lite,B,B,1,[rescued] B
 118,nastaliq,gemini-3.5-flash-lite,A,D,0,A
 119,nastaliq,gemini-3.5-flash-lite,A,B,0,A
 120,nastaliq,gemini-3.5-flash-lite,B,B,1,B

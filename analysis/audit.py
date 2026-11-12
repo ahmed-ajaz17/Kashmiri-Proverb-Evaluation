@@ -1,13 +1,18 @@
-"""Check every saved answer with the strict answer parser.
+"""Check saved answers against the strict answer parser.
 
-  python analysis/audit.py          only report what would change
-  python analysis/audit.py --fix    apply the changes to results/mcq_*.csv
+  python analysis/audit.py          report only
+  python analysis/audit.py --fix    blank only the rows that are provably wrong
 
-An answer counts only if the model clearly states one final letter (A/B/C/D).
-Rambling replies with no clear final choice become "no answer" (empty), never a guess.
-Run from the repo root. Afterwards re-run the model command: the script redoes
-empty answers by itself, then run  python analysis/score.py  again.
+Each row is in one of three groups:
+  ok            stored letter = what the parser finds in the saved reply
+  unverifiable  the saved reply is cut short (first 300 characters only), so the final
+                answer may be hidden. The letter was set when the full reply was parsed.
+                These are NOT changed. Check their accuracy: a model that really answered
+                should score well above 25% and use all four letters.
+  mismatch      the saved reply is complete but disagrees with the stored letter (a real
+                problem). --fix blanks these so run_eval.py redoes them.
 """
+import collections
 import csv
 import glob
 import sys
@@ -16,29 +21,41 @@ sys.path.insert(0, "scripts")
 from run_eval import parse_letter  # noqa: E402
 
 fix = "--fix" in sys.argv
-total_changed = 0
-print(f"{'file':52} {'rows':>5} {'long replies':>13} {'changed':>8}")
+print(f"{'file':50} {'rows':>4} {'ok':>4} {'unverif.':>8} {'acc(unv)':>8} {'A share':>7} {'mismatch':>8}")
+bad_total = 0
 for path in sorted(glob.glob("results/mcq_*.csv")):
     with open(path, encoding="utf-8-sig", newline="") as f:
         rows = list(csv.DictReader(f))
-    fields = list(rows[0].keys()) if rows else []
-    long_n = changed = 0
+    if not rows:
+        continue
+    fields = list(rows[0].keys())
+    ok = mism = 0
+    unv = []
     for r in rows:
         raw = r["raw_answer"]
-        if len(raw.strip()) > 12:
-            long_n += 1
+        cut = len(raw) >= 300 or "[...]" in raw
         new = parse_letter(raw)
-        if new != r["predicted"]:
-            changed += 1
+        if new == r["predicted"]:
+            ok += 1
+        elif cut:
+            if r["predicted"]:
+                unv.append(r)
+            else:
+                ok += 1                      # blank stays blank
+        else:
+            mism += 1
             if fix:
                 r["predicted"] = new
                 r["is_correct"] = int(new == r["correct"])
-    total_changed += changed
-    print(f"{path[8:]:52} {len(rows):>5} {long_n:>13} {changed:>8}")
-    if fix and changed:
+    bad_total += mism
+    acc = (100 * sum(int(x["is_correct"]) for x in unv) / len(unv)) if unv else 0
+    ash = (100 * sum(1 for x in unv if x["predicted"] == "A") / len(unv)) if unv else 0
+    print(f"{path[8:]:50} {len(rows):>4} {ok:>4} {len(unv):>8} {acc:>7.0f}% {ash:>6.0f}% {mism:>8}")
+    if fix and mism:
         with open(path, "w", encoding="utf-8-sig", newline="") as f:
             w = csv.DictWriter(f, fieldnames=fields)
             w.writeheader()
             w.writerows(rows)
-print("\n" + ("Changes applied." if fix else "Nothing changed yet. Add --fix to apply.")
-      + f"  Rows affected: {total_changed}")
+print("\nReal mismatches:", bad_total, "(applied)" if fix else "(add --fix to apply)")
+print("Unverifiable rows are left as they are. Healthy sign: accuracy well above 25% and "
+      "'A share' near 25-40%.")
