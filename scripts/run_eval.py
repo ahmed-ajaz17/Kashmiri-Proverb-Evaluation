@@ -1,9 +1,9 @@
 """Run the MCQ test on one model and save the answers.
 
 Usage (from the repo root):
-  python scripts/run_eval.py --provider gemini --model gemini-2.5-flash --mode nastaliq
-  python scripts/run_eval.py --provider gemini --model gemini-2.5-flash --mode roman
-  python scripts/run_eval.py --provider groq --model llama-3.3-70b-versatile --mode nastaliq
+  python scripts/run_eval.py --provider gemini --model gemini-3.5-flash --mode nastaliq
+  python scripts/run_eval.py --provider gemini --model gemini-3.5-flash --mode roman
+  python scripts/run_eval.py --provider groq --model openai/gpt-oss-120b --mode nastaliq
 
 Providers and the key each one reads from the environment:
   gemini      GEMINI_API_KEY
